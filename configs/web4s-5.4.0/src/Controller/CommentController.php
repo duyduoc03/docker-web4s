@@ -35,7 +35,7 @@ class CommentController extends AppController {
  
         // get info block
         $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => CODE_TEMPLATE,
+            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'code' => $block_code,
             'deleted' => 0
         ])->first();
@@ -94,7 +94,7 @@ class CommentController extends AppController {
  
         // get info block
         $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => CODE_TEMPLATE,
+            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'code' => $block_code,
             'deleted' => 0
         ])->first();

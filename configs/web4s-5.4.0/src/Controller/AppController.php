@@ -806,7 +806,7 @@ class AppController extends Controller
                 'page_code' => PAGE_CODE,
                 'lang IN' => array_keys($languages),
                 'url <>' => '',
-                'template_code' => CODE_TEMPLATE 
+                'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
             ])->select(['lang', 'url'])->toArray();
         }
         $seo_info['alternate'] = $alternate;

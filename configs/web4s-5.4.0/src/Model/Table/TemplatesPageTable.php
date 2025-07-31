@@ -35,7 +35,7 @@ class TemplatesPageTable extends AppTable
             'bindingKey' => 'code',
             'joinType' => 'LEFT',
             'conditions' => [
-                'ContentMutiple.template_code' => CODE_TEMPLATE
+                'ContentMutiple.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
             ],
             'propertyName' => 'ContentMutiple'
         ]);
@@ -69,7 +69,7 @@ class TemplatesPageTable extends AppTable
         if(empty($code) && empty($url) && empty($type)) return [];
 
         $where = [
-            'TemplatesPage.template_code' => CODE_TEMPLATE
+            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
         ];
 
         $contain = [];
@@ -123,7 +123,7 @@ class TemplatesPageTable extends AppTable
         if(empty($type)) return [];
 
         $where = [
-            'TemplatesPage.template_code' => CODE_TEMPLATE,
+            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPage.type' => $type,
             'TemplatesPage.page_type' => PAGE
         ];
@@ -157,7 +157,7 @@ class TemplatesPageTable extends AppTable
     public function getHomePage()
     {
         return TableRegistry::get('TemplatesPage')->find()->where([
-            'TemplatesPage.template_code' => CODE_TEMPLATE,
+            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPage.type' => HOME,
         ])->first();
     }
@@ -167,7 +167,7 @@ class TemplatesPageTable extends AppTable
         $list_page = TableRegistry::get('TemplatesPage')->find()
         ->contain(['ContentMutiple'])
         ->where([
-            'TemplatesPage.template_code' => CODE_TEMPLATE,
+            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPage.page_type' => PAGE
         ])->order('TemplatesPage.id ASC')->toArray();
         
@@ -196,7 +196,7 @@ class TemplatesPageTable extends AppTable
         $result = $this->find()
         ->where([
             'TemplatesPage.name' => $name,
-            'TemplatesPage.template_code' => CODE_TEMPLATE
+            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
         ])->select(['TemplatesPage.id'])->first();
         return !empty($result) ? true : false;
     }

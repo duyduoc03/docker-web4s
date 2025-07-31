@@ -6,11 +6,16 @@ use Cake\ORM\Table;
 class FileManagerAppTable extends Table
 {
     public $base_path = '/media';
-    public $default_dir = SOURCE_DOMAIN . DS . 'templates' . DS . CODE_TEMPLATE . DS . 'assets';
+    public $default_dir = null;
 
     public function initialize(array $config): void
-    {        
+    {
         parent::initialize($config);
+        
+        // Set default_dir after constants are loaded
+        if (defined('SOURCE_DOMAIN') && defined('CODE_TEMPLATE')) {
+            $this->default_dir = SOURCE_DOMAIN . DS . 'templates' . DS . CODE_TEMPLATE . DS . 'assets';
+        }
     }
 
     public function responseData($params = []) 

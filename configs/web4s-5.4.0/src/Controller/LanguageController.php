@@ -50,7 +50,7 @@ class LanguageController extends SystemController {
             $url_link = TableRegistry::get('TemplatesPageContent')->find()->where([
                 'page_code' => $page_url['page_code'],
                 'lang' => $lang,
-                'template_code' => CODE_TEMPLATE
+                'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
             ])->select(['url'])->first();
             $url_redirect = !empty($url_link['url']) ? '/' . $url_link['url'] : '/';
 

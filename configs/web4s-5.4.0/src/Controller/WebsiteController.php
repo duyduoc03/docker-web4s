@@ -22,7 +22,7 @@ class WebsiteController extends AppController {
         $code = empty($data['code']) ? $data['code'] : '';
 
         $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => CODE_TEMPLATE,
+            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'code' => $code,
             'deleted' => 0
         ])->first();
