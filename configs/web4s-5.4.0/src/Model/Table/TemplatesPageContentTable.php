@@ -19,7 +19,7 @@ class TemplatesPageContentTable extends Table
         if(empty($url)) return false;
 
         $where = [
-            'TemplatesPageContent.template_code' => CODE_TEMPLATE,
+            'TemplatesPageContent.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPageContent.url' => trim($url),
         ];
 
@@ -38,7 +38,7 @@ class TemplatesPageContentTable extends Table
         if(empty($lang) || empty($page_code)) return [];
 
         $result = TableRegistry::get('TemplatesPageContent')->find()->where([
-            'TemplatesPageContent.template_code' => CODE_TEMPLATE,
+            'TemplatesPageContent.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPageContent.page_code' => $page_code,
             'TemplatesPageContent.lang' => $lang
         ])->select([

@@ -19,7 +19,7 @@ class TemplatesColumnTable extends AppTable
     	if(empty($block_code)) return [];
 
     	$result = TableRegistry::get('TemplatesColumn')->find()->where([
-    		'TemplatesColumn.template_code' => CODE_TEMPLATE,
+    		'TemplatesColumn.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
     		'TemplatesColumn.block_code LIKE' => '%' . $block_code . '%'
     	])->select([
     		'TemplatesColumn.id', 

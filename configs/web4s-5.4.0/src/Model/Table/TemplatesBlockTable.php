@@ -93,7 +93,7 @@ class TemplatesBlockTable extends AppTable
 
         // filter by conditions
         $where = [
-            'TemplatesBlock.template_code' => CODE_TEMPLATE,
+            'TemplatesBlock.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesBlock.deleted' => 0
         ];
 
@@ -129,7 +129,7 @@ class TemplatesBlockTable extends AppTable
 
         if(is_null($result)){
             $where = [
-                'TemplatesBlock.template_code' => CODE_TEMPLATE,
+                'TemplatesBlock.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
                 'TemplatesBlock.code' => $code,
                 'TemplatesBlock.deleted' => 0
             ];

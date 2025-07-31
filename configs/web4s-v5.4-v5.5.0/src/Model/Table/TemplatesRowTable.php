@@ -95,7 +95,7 @@ class TemplatesRowTable extends AppTable
     {
     	// get list row of page
     	$where = [
-            'TemplatesRow.template_code' => CODE_TEMPLATE,
+            'TemplatesRow.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesRow.page_code' => $page_code,
             'TemplatesRow.device' => $device
         ];
