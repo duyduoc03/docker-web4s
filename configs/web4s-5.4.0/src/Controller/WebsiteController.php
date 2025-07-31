@@ -21,11 +21,16 @@ class WebsiteController extends AppController {
         $data = $this->getRequest()->getData();
         $code = empty($data['code']) ? $data['code'] : '';
 
-        $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
+        $where = [
             'code' => $code,
             'deleted' => 0
-        ])->first();
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['template_code'] = CODE_TEMPLATE;
+        }
+        
+        $block_info = TableRegistry::get('TemplatesBlock')->find()->where($where)->first();
 
         $config = !empty($block_info['config']) ? json_decode($block_info['config'], true) : [];
         $type = !empty($block_info['type']) ? $block_info['type'] : null;

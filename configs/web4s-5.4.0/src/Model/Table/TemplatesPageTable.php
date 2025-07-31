@@ -29,14 +29,17 @@ class TemplatesPageTable extends AppTable
             'propertyName' => 'TemplatesPageContent'
         ]);
 
+        $conditions = [];
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $conditions['ContentMutiple.template_code'] = CODE_TEMPLATE;
+        }
+        
         $this->hasMany('ContentMutiple', [
             'className' => 'TemplatesPageContent',
             'foreignKey' => 'page_code',
             'bindingKey' => 'code',
             'joinType' => 'LEFT',
-            'conditions' => [
-                'ContentMutiple.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
-            ],
+            'conditions' => $conditions,
             'propertyName' => 'ContentMutiple'
         ]);
 
@@ -68,9 +71,10 @@ class TemplatesPageTable extends AppTable
 
         if(empty($code) && empty($url) && empty($type)) return [];
 
-        $where = [
-            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
-        ];
+        $where = [];
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPage.template_code'] = CODE_TEMPLATE;
+        }
 
         $contain = [];
 
@@ -123,10 +127,13 @@ class TemplatesPageTable extends AppTable
         if(empty($type)) return [];
 
         $where = [
-            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPage.type' => $type,
             'TemplatesPage.page_type' => PAGE
         ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPage.template_code'] = CODE_TEMPLATE;
+        }
 
         if(!empty($category_id)){
             $order = 'TemplatesPage.category_id DESC';
@@ -156,20 +163,28 @@ class TemplatesPageTable extends AppTable
 
     public function getHomePage()
     {
-        return TableRegistry::get('TemplatesPage')->find()->where([
-            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
-            'TemplatesPage.type' => HOME,
-        ])->first();
+        $where = [];
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPage.template_code'] = CODE_TEMPLATE;
+        }
+        $where['TemplatesPage.type'] = HOME;
+        
+        return TableRegistry::get('TemplatesPage')->find()->where($where)->first();
     }
 
     public function getListPageContent()
     {
+        $where = [
+            'TemplatesPage.page_type' => PAGE
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPage.template_code'] = CODE_TEMPLATE;
+        }
+        
         $list_page = TableRegistry::get('TemplatesPage')->find()
         ->contain(['ContentMutiple'])
-        ->where([
-            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
-            'TemplatesPage.page_type' => PAGE
-        ])->order('TemplatesPage.id ASC')->toArray();
+        ->where($where)->order('TemplatesPage.id ASC')->toArray();
         
         $result = [];
         if(!empty($list_page)) {
@@ -193,11 +208,16 @@ class TemplatesPageTable extends AppTable
     public function checkNameExist($name = null)
     {
         if(empty($name)) return false;
+        $where = [
+            'TemplatesPage.name' => $name
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPage.template_code'] = CODE_TEMPLATE;
+        }
+        
         $result = $this->find()
-        ->where([
-            'TemplatesPage.name' => $name,
-            'TemplatesPage.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
-        ])->select(['TemplatesPage.id'])->first();
+        ->where($where)->select(['TemplatesPage.id'])->first();
         return !empty($result) ? true : false;
     }
 }

@@ -19,9 +19,12 @@ class TemplatesPageContentTable extends Table
         if(empty($url)) return false;
 
         $where = [
-            'TemplatesPageContent.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesPageContent.url' => trim($url),
         ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPageContent.template_code'] = CODE_TEMPLATE;
+        }
 
         if(!empty($code)){
             $where['TemplatesPageContent.page_code <>'] = $code;
@@ -37,11 +40,16 @@ class TemplatesPageContentTable extends Table
         $page_code = !empty($params['page_code']) ? $params['page_code'] : null;
         if(empty($lang) || empty($page_code)) return [];
 
-        $result = TableRegistry::get('TemplatesPageContent')->find()->where([
-            'TemplatesPageContent.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
+        $where = [
             'TemplatesPageContent.page_code' => $page_code,
             'TemplatesPageContent.lang' => $lang
-        ])->select([
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesPageContent.template_code'] = CODE_TEMPLATE;
+        }
+        
+        $result = TableRegistry::get('TemplatesPageContent')->find()->where($where)->select([
             'seo_title', 
             'seo_description',
             'seo_keyword',

@@ -47,11 +47,16 @@ class LanguageController extends SystemController {
         ])->select(['page_code'])->first();
         
         if(!empty($page_url['page_code'])) {
-            $url_link = TableRegistry::get('TemplatesPageContent')->find()->where([
+            $where = [
                 'page_code' => $page_url['page_code'],
-                'lang' => $lang,
-                'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
-            ])->select(['url'])->first();
+                'lang' => $lang
+            ];
+            
+            if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+                $where['template_code'] = CODE_TEMPLATE;
+            }
+            
+            $url_link = TableRegistry::get('TemplatesPageContent')->find()->where($where)->select(['url'])->first();
             $url_redirect = !empty($url_link['url']) ? '/' . $url_link['url'] : '/';
 
         }else{

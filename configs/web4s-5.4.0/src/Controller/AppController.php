@@ -802,12 +802,17 @@ class AppController extends Controller
                 'lang IN' => array_keys($languages)
             ])->select(['lang', 'url'])->toArray();        
         }elseif(!empty(PAGE_CODE)){
-            $alternate = TableRegistry::get('TemplatesPageContent')->find()->where([
+            $where = [
                 'page_code' => PAGE_CODE,
                 'lang IN' => array_keys($languages),
-                'url <>' => '',
-                'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null
-            ])->select(['lang', 'url'])->toArray();
+                'url <>' => ''
+            ];
+            
+            if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+                $where['template_code'] = CODE_TEMPLATE;
+            }
+            
+            $alternate = TableRegistry::get('TemplatesPageContent')->find()->where($where)->select(['lang', 'url'])->toArray();
         }
         $seo_info['alternate'] = $alternate;
         $seo_info['site_name'] = !empty($website_info['site_name']) ? $website_info['site_name'] : null;

@@ -93,9 +93,12 @@ class TemplatesBlockTable extends AppTable
 
         // filter by conditions
         $where = [
-            'TemplatesBlock.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
             'TemplatesBlock.deleted' => 0
         ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['TemplatesBlock.template_code'] = CODE_TEMPLATE;
+        }
 
         if(!empty($ids)){
             $where['TemplatesBlock.id IN'] = $ids;
@@ -129,10 +132,13 @@ class TemplatesBlockTable extends AppTable
 
         if(is_null($result)){
             $where = [
-                'TemplatesBlock.template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
                 'TemplatesBlock.code' => $code,
                 'TemplatesBlock.deleted' => 0
             ];
+            
+            if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+                $where['TemplatesBlock.template_code'] = CODE_TEMPLATE;
+            }
 
             $fields = ['TemplatesBlock.id', 'TemplatesBlock.template_code', 'TemplatesBlock.code', 'TemplatesBlock.name', 'TemplatesBlock.type', 'TemplatesBlock.view', 'TemplatesBlock.config', 'TemplatesBlock.data_extend', 'TemplatesBlock.normal_data_extend', 'TemplatesBlock.collection_data_extend', 'TemplatesBlock.status', 'TemplatesBlock.updated'];
 

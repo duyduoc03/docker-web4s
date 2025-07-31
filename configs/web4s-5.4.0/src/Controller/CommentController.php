@@ -34,11 +34,16 @@ class CommentController extends AppController {
         }        
  
         // get info block
-        $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
+        $where = [
             'code' => $block_code,
             'deleted' => 0
-        ])->first();
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['template_code'] = CODE_TEMPLATE;
+        }
+        
+        $block_info = TableRegistry::get('TemplatesBlock')->find()->where($where)->first();
         if(empty($block_info)){
             $this->responseJson([MESSAGE => __d('template', 'khong_lay_duoc_thong_tin_block')]);
         }
@@ -93,11 +98,16 @@ class CommentController extends AppController {
         }        
  
         // get info block
-        $block_info = TableRegistry::get('TemplatesBlock')->find()->where([
-            'template_code' => defined('CODE_TEMPLATE') ? CODE_TEMPLATE : null,
+        $where = [
             'code' => $block_code,
             'deleted' => 0
-        ])->first();
+        ];
+        
+        if (defined('CODE_TEMPLATE') && CODE_TEMPLATE !== null) {
+            $where['template_code'] = CODE_TEMPLATE;
+        }
+        
+        $block_info = TableRegistry::get('TemplatesBlock')->find()->where($where)->first();
 
         if(empty($block_info)){
             $this->responseJson([MESSAGE => __d('template', 'khong_lay_duoc_thong_tin_block')]);
