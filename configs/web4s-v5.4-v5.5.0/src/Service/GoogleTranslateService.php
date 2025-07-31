@@ -1,0 +1,50 @@
+<?php
+namespace App\Service;
+
+use Cake\Http\Client;
+use Cake\ORM\TableRegistry;
+use Cake\Utility\Hash;
+
+class GoogleTranslateService extends AppService
+{
+
+    public function translate($list_text = [], $from = null, $to = null)
+    {
+        $utilities = TableRegistry::get('Utilities');
+
+        if(empty($list_text) || !is_array($list_text)) return [];
+        if(empty($from) || empty($to)) return $list_text;
+        
+        $result = [];
+        $http = new Client();
+        foreach($list_text as $key => $text){
+            $params = [
+                'dt' => 't',
+                'client' => 'gtx',
+                'dj' => 1,
+                'sl' => $from,
+                'tl' => $to,
+                'q' => $text
+            ];
+
+            $url = 'https://translate.googleapis.com/translate_a/single?' . http_build_query($params);
+            $translates = $http->get($url);
+            $translates = $translates->getJson();
+            $sentences = !empty($translates['sentences']) ? $translates['sentences'] : [];
+            
+            if(empty($sentences)){
+                $result[] = $text;
+                continue;
+            }
+
+            $text_tran = null;
+            foreach($sentences as $item){
+                $text_tran .= !empty($item['trans']) ? $item['trans'] : null;
+            }
+
+            $result[$key] = $text_tran;
+        }
+        return $result;
+        
+    }
+}

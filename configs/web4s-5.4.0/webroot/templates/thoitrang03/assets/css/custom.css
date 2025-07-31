@@ -1,0 +1,335 @@
+/*.header-search {*/
+/*    margin-left: 15px;*/
+/*    margin-right: 15px;*/
+/*}*/
+.search-section {
+    min-width: 240px;
+}
+
+.search-section input {
+    border-radius: 5px 0 0 5px;
+}
+
+.search-section .btn-submit {
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+}
+
+.header-main > .container > .row > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tai-khoan-header i {
+    font-size: 18px;
+    color: var(--color-highlight);
+}
+
+.tai-khoan-header {
+    padding: 0 0px 0 20px;
+}
+
+.content-banner-main1 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+.tieu-de-banner-main {
+    font-size: 32px;
+    color: white;
+}
+
+.cus-banner-main1 img {
+    height: 45vw;
+    object-fit: cover;
+}
+
+.cus-banner-main1 {
+    border-right: 5px solid white;
+}
+
+.cus-banner-main2 img {
+    height: 45vw;
+    object-fit: cover;
+}
+
+.cus-link-banner-main1 {
+    display: block;
+    color: var(--white);
+    background: var(--color-highlight);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 12px;
+    text-align: center;
+    max-width: 150px;
+    padding: 15px 0;
+    margin-top: 25px;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.highlight__box img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    /* filter: brightness(0) invert(1); */
+}
+
+.swiper-slide--tile-highlight {
+    font-size: 16px;
+    color: var(--color-highlight);
+}
+
+.bg-color-highlight-content {
+    background-color: #f3f1e4;
+    padding: 30px 0;
+}
+
+.title-cate-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#fff0, #000000ad);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.rounded-8 {
+    border-radius: 8px !important;
+}
+
+.collection-box {
+    background: var(--color-highlight);
+    padding: 60px 0;
+}
+
+.collection__text-1 {
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.collection__text-2 {
+    font-size: 24px;
+    color: var(--white);
+    position: relative;
+    display: inline-block;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+
+.collection__text-2:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 50%;
+    border: 1px solid var(--white);
+}
+
+.collection__description {
+    font-weight: 300;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.collection__button a {
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--white);
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--color-main);
+    font-weight: 500;
+    padding: 13px 30px;
+    border-radius: 5px;
+}
+
+.collection__button a:hover {
+    background: var(--light);
+}
+
+.collection__img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.collection__img img {
+    width: 100%;
+    height: auto;
+}
+
+.row-align-center-gioithieu > .row > div {
+    margin-bottom: auto !important;
+    margin-top: auto !important;
+}
+
+.product-item:hover .product-action {
+    opacity: 1;
+}
+
+.product-item .product-rating-price .wrp-rating-price {
+    height: 44px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+}
+
+.product-item:hover .product-action {
+    opacity: 1;
+    filter: opacity(1);
+    visibility: visible;
+    bottom: 30px;
+}
+
+.product-item:hover .product-rating-price .wrp-rating-price {
+    -webkit-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px);
+}
+
+.product-item:hover .price {
+    opacity: 0;
+}
+
+.product-item .star-rating {
+    opacity: 0;
+}
+
+.product-item:hover .star-rating {
+    opacity: 1;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 1.5rem
+}
+
+.card-header h5 button {
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-highlight)
+}
+
+.bg-color-highlight-faq {
+    background-color: #f3f1e4;
+    padding: 60px 0;
+}
+
+.gallery-home {
+    background-color: #e9eff1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+footer {
+    background-color: #f3f1e4;
+    padding-top: 30px;
+}
+
+/*zoom-anh*/
+.zoom-anh-rieng {
+    overflow: hidden;
+}
+
+.zoom-anh-rieng img {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.zoom-anh-rieng:hover img {
+    overflow: hidden;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+/*zoom-anh*/
+
+@media (max-width: 768px) {
+    .is-mobile .main-header-mobile .logo-section {
+        text-align: right;
+    }
+
+    .main-header-mobile .container > .row > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .cus-banner-main1 img {
+        width: 100%;
+    }
+
+    .cus-banner-main2 img {
+        width: 100%;
+    }
+
+    .cus-banner-main1 {
+        border-right: 0px solid white;
+    }
+
+    .tieu-de-banner-main {
+        font-size: 20px;
+    }
+
+    .content-banner-main1 {
+        position: absolute;
+        top: 30%;
+        left: 8%;
+    }
+
+    .cus-link-banner-main1 {
+        font-size: 13px;
+        line-height: 10px;
+        max-width: 100px;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .collection__content {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+     .row-mobile > .container > .row > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

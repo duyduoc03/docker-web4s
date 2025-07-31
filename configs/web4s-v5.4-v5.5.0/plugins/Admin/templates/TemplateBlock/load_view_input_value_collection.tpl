@@ -1,0 +1,1 @@
+{$this->ExtendCollectionAdmin->generateInput($field_filter)}

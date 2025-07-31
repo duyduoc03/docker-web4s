@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  web4s-v5.4-v5.5.0-web:
+    build:
+      context: ./dockerfiles/php8.1
+      dockerfile: Dockerfile
+    container_name: web4s-v5.4-v5.5.0-web
+    ports:
+      - "8084:80"
+    volumes:
+      # Cách 1: Sử dụng thư mục configs
+      - ./configs/web4s-v5.4-v5.5.0:/var/www/html
+      
+      # Cách 2: Mount thư mục project riêng (bỏ comment để sử dụng)
+      # - D:\Projects\my-web4s-project:/var/www/html
+      
+      # Cách 3: Nếu clone vào thư mục con trong configs
+      # - ./configs/web4s-v5.4-v5.5.0/my-project:/var/www/html
+      - ./logs/apache:/var/log/apache2
+    depends_on:
+      - web4s-v5.4-v5.5.0-db
+    environment:
+      - DB_HOST=web4s-5.4.0-db
+      - DB_NAME=web4s_5_4_0
+      - DB_USER=web4s_user
+      - DB_PASS=web4s_password
+    networks:
+      - web4s-v5.4-v5.5.0-network
+
+  web4s-v5.4-v5.5.0-db:
+    image: mariadb:10.5.9
+    container_name: web4s-v5.4-v5.5.0-db
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: web4s_5_4_0
+      MYSQL_USER: web4s_user
+      MYSQL_PASSWORD: web4s_password
+    volumes:
+      - web4s-v5.4-v5.5.0-data:/var/lib/mysql
+      - ./configs/web4s-v5.4-v5.5.0/database:/docker-entrypoint-initdb.d
+    networks:
+      - web4s-v5.4-v5.5.0-network
+
+  web4s-v5.4-v5.5.0-phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.1
+    container_name: web4s-v5.4-v5.5.0-phpmyadmin
+    ports:
+      - "8085:80"
+    environment:
+      PMA_HOST: web4s-v5.4-v5.5.0-db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+    depends_on:
+      - web4s-v5.4-v5.5.0-db
+    networks:
+      - web4s-v5.4-v5.5.0-network
+
+volumes:
+  web4s-v5.4-v5.5.0-data:
+
+networks:
+  web4s-v5.4-v5.5.0-network:
+    driver: bridge 

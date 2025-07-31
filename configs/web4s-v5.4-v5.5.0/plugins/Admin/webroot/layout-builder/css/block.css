@@ -1,0 +1,79 @@
+body {
+    /*margin-top: 30px;*/
+}
+
+[nh-block] {
+    position: relative;
+}
+[nh-block] > div:not(.nh-config-action) {
+    position: relative;
+}
+[nh-block]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: #5d78ff dashed 1px;
+    opacity: 0;
+}
+[nh-block]:hover::before {
+    opacity: 1;
+}
+
+[nh-block]::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 30px;
+}
+
+[nh-block-cache="false"]::before {
+    outline: #fd397a dashed 1px;
+}
+
+[nh-block]:hover .nh-config-action {
+    opacity: 1;
+    filter: opacity(1);
+    visibility: visible;
+}
+
+header .nh-config-action {
+    top: 0;
+}
+.swiper > .nh-config-action {
+    top: 0;
+    left: 0;
+}
+
+.nh-config-action {
+    opacity: 0;
+    filter: opacity(0);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.nh-config-action .inner-action {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #5d78ff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.nh-config-action .inner-action i {
+    font-size: 16px;
+    vertical-align: text-bottom;
+    padding-right: 7px;
+}
+[nh-block-cache="false"] .nh-config-action .inner-action {
+    background-color: #fd397a;
+}

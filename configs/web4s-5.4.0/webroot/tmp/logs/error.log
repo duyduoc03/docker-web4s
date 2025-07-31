@@ -1,0 +1,1242 @@
+2025-07-31 11:10:16 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:10:17 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Controller\LANGUAGE" (/var/www/html/src/Controller/AppController.php:439) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:14:16 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:14:17 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 230
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 231
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 232
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 233
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 234
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:17 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+[main] [internal], line ??
+
+2025-07-31 11:14:18 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Cake\View\Exception\MissingTemplateException] Template file `Error/error500.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Error/error500.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Error/error500.php`
+ (/var/www/html/vendor/cakephp/cakephp/src/View/View.php:1398) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Cake\\View\\Exce...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Cake\\View\\Exce...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Cake\View\Exception\MissingTemplateException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Cake\View\Exception\MissingTemplateException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:14:18 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 230
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 231
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 232
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 233
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 234
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 230
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 231
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 232
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 233
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 234
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:14:18 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 433
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:15:50 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:17:23 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:17:24 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:38) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:22:47 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:22:48 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:72) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:23:52 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:23:53 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [InvalidArgumentException] Expression `TemplatesPage.template_code` is missing operator (IS, IS NOT) with `null` value. (/var/www/html/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:844) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[InvalidArgumen...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[InvalidArgumen...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(InvalidArgumentException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(InvalidArgumentException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:27:42 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:27:43 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:72) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:30:53 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:30:54 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [InvalidArgumentException] Expression `TemplatesPage.template_code` is missing operator (IS, IS NOT) with `null` value. (/var/www/html/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:844) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[InvalidArgumen...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[InvalidArgumen...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(InvalidArgumentException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(InvalidArgumentException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:31:05 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:31:06 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [InvalidArgumentException] Expression `TemplatesPage.template_code` is missing operator (IS, IS NOT) with `null` value. (/var/www/html/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:844) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[InvalidArgumen...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[InvalidArgumen...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(InvalidArgumentException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(InvalidArgumentException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:33:23 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:33:23 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [InvalidArgumentException] Expression `TemplatesPage.template_code` is missing operator (IS, IS NOT) with `null` value. (/var/www/html/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:844) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[InvalidArgumen...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[InvalidArgumen...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(InvalidArgumentException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(InvalidArgumentException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:34:10 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:34:12 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Controller\DEVICE" (/var/www/html/src/Controller/AppController.php:825) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:34:12 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 239
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 240
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 241
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 242
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:34:12 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 243
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:02 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:35:03 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Controller\DEVICE" (/var/www/html/src/Controller/AppController.php:825) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:35:03 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 239
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 240
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 241
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 242
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:35:03 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 243
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:37:42 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:37:43 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:38) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:40:50 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:40:51 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Controller\DEVICE" (/var/www/html/src/Controller/AppController.php:825) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 11:40:51 warning: Constant PAGE_URL already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 235
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:51 warning: Constant PAGE_RECORD_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 236
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:51 warning: Constant PAGE_TAG_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 237
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:51 warning: Constant PAGE_CATEGORY_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 238
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:51 warning: Constant PAGE_BRAND_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 239
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:52 warning: Constant PAGE_CATEGORIES_ID already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 240
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:52 warning: Constant PAGE_TYPE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 241
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:52 warning: Constant PAGE_CODE already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 242
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:40:52 warning: Constant PAGE_VERSION already defined
+Trace:
+define [internal], line ??
+App\Controller\AppController::beforeRender() /var/www/html/src/Controller/AppController.php, line 243
+App\Controller\ErrorController::beforeRender() /var/www/html/src/Controller/ErrorController.php, line 64
+Cake\Event\EventManager::_callListener() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 309
+Cake\Event\EventManager::dispatch() /var/www/html/vendor/cakephp/cakephp/src/Event/EventManager.php, line 286
+Cake\Controller\Controller::dispatchEvent() /var/www/html/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php, line 92
+Cake\Controller\Controller::render() /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php, line 760
+Cake\Error\Renderer\WebExceptionRenderer::_outputMessage() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 421
+Cake\Error\Renderer\WebExceptionRenderer::render() /var/www/html/vendor/cakephp/cakephp/src/Error/Renderer/WebExceptionRenderer.php, line 292
+Cake\Error\ExceptionTrap::handleException() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 241
+Cake\Error\ExceptionTrap::handleFatalError() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 328
+Cake\Error\ExceptionTrap::handleShutdown() /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php, line 283
+[main] [internal], line ??
+
+2025-07-31 11:41:22 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 11:41:23 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:38) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
+2025-07-31 16:24:50 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-07-31 16:24:51 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Error] Undefined constant "App\Model\Table\CODE_TEMPLATE" (/var/www/html/src/Model/Table/TemplatesPageTable.php:38) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Error] Undefin...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Error] Undefin...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Error))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Error))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+
