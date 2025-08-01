@@ -700,3 +700,33 @@ Stack Trace:
 - /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
 - [internal]:??
 
+2025-08-01 11:42:07 error: [Cake\Core\Exception\MissingPluginException] Plugin Admin could not be found. in /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php on line 143
+Exception Attributes: array (
+  'plugin' => 'Admin',
+)
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Core/PluginCollection.php:257
+- /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php:129
+- /var/www/html/src/Application.php:60
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:109
+- /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php:79
+- /var/www/html/webroot/index.php:34
+
+2025-08-01 11:42:09 error: [Cake\Error\FatalErrorException] Fatal Error: Uncaught Cake\Error\FatalErrorException: [Cake\View\Exception\MissingTemplateException] Template file `Error/error500.php` could not be found.
+
+The following paths were searched:
+
+- `/var/www/html/templates/Error/error500.php`
+- `/var/www/html/vendor/cakephp/cakephp/templates/Error/error500.php`
+ (/var/www/html/vendor/cakephp/cakephp/src/View/View.php:1398) in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:390
+Stack trace:
+#0 [internal function]: Cake\Error\ErrorTrap->handleError(256, '[Cake\\View\\Exce...', '/var/www/html/v...', 390)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(390): trigger_error('[Cake\\View\\Exce...', 256)
+#2 /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php(243): Cake\Error\ExceptionTrap->logInternalError(Object(Cake\View\Exception\MissingTemplateException))
+#3 [internal function]: Cake\Error\ExceptionTrap->handleException(Object(Cake\View\Exception\MissingTemplateException))
+#4 {main}
+  thrown in /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php on line 390
+Stack Trace:
+- /var/www/html/vendor/cakephp/cakephp/src/Error/ExceptionTrap.php:283
+- [internal]:??
+

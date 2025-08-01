@@ -1,0 +1,8 @@
+{
+    "name": "Giao diện thiết bị",
+    "code": "thietbi01",
+    "author": "Được",
+    "plugins": "article, product",
+    "version": "v5.0",
+    "description": "..."
+}

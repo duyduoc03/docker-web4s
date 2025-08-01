@@ -4,6 +4,7 @@ Write-Host "Khởi động Web4s 5.4.0 (PHP 8.1)..." -ForegroundColor Green
 # Dừng các container khác nếu đang chạy
 docker-compose -f docker-compose.web4s-4.0.0.yml down
 docker-compose -f docker-compose.web4s-5.0.0.yml down
+docker-compose -f docker-compose.web4s-5.5.0.yml down
 
 # Khởi động Web4s 5.4.0
 docker-compose -f docker-compose.web4s-5.4.0.yml up -d --build
