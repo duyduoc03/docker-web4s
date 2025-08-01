@@ -1,1 +1,0 @@
-https://cdnjs.com/libraries/bootstrap-datepicker

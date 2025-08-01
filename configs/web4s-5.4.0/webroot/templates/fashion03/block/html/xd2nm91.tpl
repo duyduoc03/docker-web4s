@@ -1,1 +1,0 @@
-{strip}{$this->fetch('content')}{/strip}

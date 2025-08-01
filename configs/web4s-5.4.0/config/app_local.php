@@ -1,6 +1,6 @@
 <?php
 
-$debug = false;
+$debug = true;
 if (defined('CLIENT_DEBUG')) {
     $debug = (bool)CLIENT_DEBUG;
 }

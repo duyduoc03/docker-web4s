@@ -28,6 +28,9 @@ docker-tutorial/
     └── start-web4s-5.4.0.sh
 ```
 
+powershell -ExecutionPolicy Bypass -File .\scripts\start-web4s-5.4.0.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\stop-all.ps1
+
 ## Cách sử dụng
 1. Clone dự án này
 2. Copy source code Web4s vào thư mục tương ứng

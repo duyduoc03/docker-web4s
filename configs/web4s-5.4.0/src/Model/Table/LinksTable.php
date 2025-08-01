@@ -113,7 +113,8 @@ class LinksTable extends Table
         if(empty($url)) return [];
 
         $type = !empty($params['type']) ? $params['type'] : null;
-        $language = !empty($params[LANGUAGE]) ? $params[LANGUAGE] : null;
+        // $language = !empty($params[LANGUAGE]) ? $params[LANGUAGE] : null;
+        $language = !empty($params['language']) ? $params['language'] : null;
         
         $where = [
             'deleted' => 0,

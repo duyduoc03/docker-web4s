@@ -1,8 +1,0 @@
-{
-    "name": "Giao diện thời trang",
-    "code": "thoitrang03",
-    "author": "Web4s",
-    "plugins": "article, product",
-    "version": "v1.0",
-    "description": "Giao diện thời trang"
-}

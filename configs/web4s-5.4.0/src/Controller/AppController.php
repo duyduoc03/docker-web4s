@@ -232,15 +232,25 @@ class AppController extends Controller
             }
             $page_info = !empty($page['page_info']) ? $page['page_info'] : [];
 
-            define('PAGE_URL', $url);
-            define('PAGE_RECORD_ID', $page_record_id);
-            define('PAGE_TAG_ID', $tag_id);
-            define('PAGE_CATEGORY_ID', $page_category_id);
-            define('PAGE_BRAND_ID', $page_brand_id);
-            define('PAGE_CATEGORIES_ID', $page_categories_id);
-            define('PAGE_TYPE', $type);
-            define('PAGE_CODE', $code);
-            define('PAGE_VERSION', $version);
+            // define('PAGE_URL', $url);
+            // define('PAGE_RECORD_ID', $page_record_id);
+            // define('PAGE_TAG_ID', $tag_id);
+            // define('PAGE_CATEGORY_ID', $page_category_id);
+            // define('PAGE_BRAND_ID', $page_brand_id);
+            // define('PAGE_CATEGORIES_ID', $page_categories_id);
+            // define('PAGE_TYPE', $type);
+            // define('PAGE_CODE', $code);
+            // define('PAGE_VERSION', $version);
+
+            if (!defined('PAGE_URL')) define('PAGE_URL', $url);
+            if (!defined('PAGE_RECORD_ID')) define('PAGE_RECORD_ID', $page_record_id);
+            if (!defined('PAGE_TAG_ID')) define('PAGE_TAG_ID', $tag_id);
+            if (!defined('PAGE_CATEGORY_ID')) define('PAGE_CATEGORY_ID', $page_category_id);
+            if (!defined('PAGE_BRAND_ID')) define('PAGE_BRAND_ID', $page_brand_id);
+            if (!defined('PAGE_CATEGORIES_ID')) define('PAGE_CATEGORIES_ID', $page_categories_id);
+            if (!defined('PAGE_TYPE')) define('PAGE_TYPE', $type);
+            if (!defined('PAGE_CODE')) define('PAGE_CODE', $code);
+            if (!defined('PAGE_VERSION')) define('PAGE_VERSION', $version);
             
             $structure = $blocks = $seo_info = $breadcrumb = $schema_data = $data_init = [];
             $cache_page = false;
